@@ -14,11 +14,42 @@
     href="https://tab.pixellab.ro/pixeltab.css"
   >
 
+  <link
+    rel="stylesheet"
+    href="css/app.css"
+  >
+
   <script src="https://tab.pixellab.ro/pixeltab-top.js"></script>
 </head>
 
 <body>
 
+  <form action="/">
+    <fieldset>
+      <legend>Calculator Suprafata Dreptunghi</legend>
+
+      <label for="length">Lungime: </label>
+      <input
+        type="text"
+        name="length"
+        id="length"
+        placeholder="Lungime"
+      >
+
+      <label for="width">Latime: </label>
+      <input
+        type="text"
+        name="width"
+        id="width"
+        placeholder="Latime"
+      >
+
+      <button type="submit">Calculeaza</button>
+
+      <p>Rezultat: <span id="result"></span></p>
+
+    </fieldset>
+  </form>
 
 
   <script src="app.js"></script>
