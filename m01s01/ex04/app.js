@@ -10,7 +10,7 @@ form.addEventListener(
     var radius = inputRadius.value || 0;
     var result = 0;
 
-    result = radius * radius * Math.PI;
+    result = Math.pow(radius, 2) * Math.PI;
 
     elementResult.innerText = result;
   },

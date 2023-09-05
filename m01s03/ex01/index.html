@@ -21,11 +21,19 @@
 
   <script>
     var object = {
-      name: 'Dragos',
-      surname: 'Iordache',
-      age: 32
+      name: 'Alin',
+      surname: 'Voicu',
+      age: 35,
+      petOwner: false,
+      carOwner: false
     };
 
+    console.log(object.name);
+    console.log((object.age).toString());
+    console.log('Ma numesc ' + object.name + ' ' + object.surname + ' si am ' + ((object.age).toString()) + ' ani.');
+    console.log((2023 - object.age).toString());
+    console.log(object.name + ' ' + object.surname + ' are ' + object.age + ' ani.');
+    console.log(object.name + ' s-a nascut in ' + (2023 - object.age) + '.')
   </script>
 
   <div
