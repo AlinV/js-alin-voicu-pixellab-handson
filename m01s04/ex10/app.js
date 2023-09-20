@@ -84,7 +84,7 @@ person.friends.forEach(function (friend) {
   }
 });
 
-console.log(message + sumYears + '.');
+console.log(`${message}${sumYears}.`);
 
 // Cerinta 5
 
@@ -120,12 +120,14 @@ person.friends.forEach(function (friend) {
 var message = ``;
 
 person.friends.forEach(function (friend, index, friends) {
-  var ageDiff = person.age - friend.age;
-  var punctuation = '. ';
+  var ageDiff = Math.abs(person.age - friend.age);
+  var punctuation = friends.length - 1 === index ? '.' : '. ';
 
-  if (friends.length - 1 === index) {
-    punctuation = '.';
-  }
+  // var punctuation = '. ';
+
+  // if (friends.length - 1 === index) {
+  //   punctuation = '.';
+  // }
   message += `Intre ${person.name} si ${friend.name} este o diferenta de ${ageDiff} ani${punctuation}`;
 });
 
@@ -134,6 +136,9 @@ console.log(message);
 // Cerinta 8
 
 // Folosind metoda reverse si apoi forEach, afiseaza in ordine inversa elementele arrayului skills.
+
+// slice fara paramteri creeaza O CLONA
+// slice without parameters will CLONE the array
 
 person.skills
   .slice()
