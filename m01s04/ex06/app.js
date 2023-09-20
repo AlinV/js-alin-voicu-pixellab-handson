@@ -200,19 +200,19 @@ for (var i = 0; i < person.friends.length; i++) {
   console.log('Diferenta de varsta este: ' + ageDiff + '.');
 }
 
-var agePersonFriend = '';
+var message = '';
 
 for (var i = 0; i < person.friends.length; i++) {
   var ageDiff = person.age - person.friends[i].age;
 
-  agePersonFriend += `Intre ${person.name} si ${person.friends[i].name} este o diferenta de ${ageDiff} ani.`;
+  message += `Intre ${person.name} si ${person.friends[i].name} este o diferenta de ${ageDiff} ani.`;
 
   if (i < person.friends.length - 1) {
-    agePersonFriend += ' ';
+    message += ' ';
   }
 }
 
-console.log(agePersonFriend);
+console.log(message);
 
 var friendsFullName = '';
 
