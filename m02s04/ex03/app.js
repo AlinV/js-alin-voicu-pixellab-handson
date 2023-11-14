@@ -16,6 +16,19 @@ const axisMotionMap = {
   N: {
     y: -1,
   },
+  SE: {
+    x: 1,
+    y: 1,
+  },
+  SW: {
+    x: 1,
+    y: -1,
+  },
+  NE: {
+    x: -1,
+    y: 1,
+  },
+  NW: {},
 };
 const keysMap = {
   ArrowUp: axisMotionMap.N,

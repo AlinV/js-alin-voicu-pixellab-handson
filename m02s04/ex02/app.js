@@ -4,6 +4,7 @@ const secondBox = document.getElementById('box-2');
 const thirdBox = document.getElementById('box-3');
 let box = document.querySelectorAll('.box');
 const colorInput = controls.querySelector('.color-input');
+colorInput.placeholder = 'Type a hex value and press Enter';
 const resetButton = controls.querySelector('.reset-button');
 
 // event delegation
